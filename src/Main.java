@@ -11,8 +11,8 @@ public class Main{
         
         // --- TODO
 
-MusicBox mbox2 = new MusicBox("A12BC34", 'N', "Sunshine", "Bright", 
-    "Happy day", "Pop", "Star Music", "Sunny Vibes");
+MusicBox mbox2 = new MusicBox("1234", 'N', "ra", "light", 
+    "bad day", "kpop", "sun Music", "Vibes");
 
 
 playsong.playSong(mbox2.getSongID(), mbox2.getPremiumSong(), 1); to the MusicBox constructor, but initialise premiumSong to N and when calling the
