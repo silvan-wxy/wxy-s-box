@@ -73,7 +73,7 @@ public class ERyder {
 }
 
 // Main.java
-public class Main {
+class Main {
     public static void main(String[] args) {
         ERyder bike1 = new ERyder();
         bike1.printBikeDetails();
