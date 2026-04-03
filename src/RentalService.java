@@ -1,6 +1,7 @@
 import java.util.List;
 
 public class RentalService {
+    public static final double BASE_FARE = 3.0;
     private List<ActiveRental> activeRentals;
 
     public RentalService(List<ActiveRental> activeRentals) {
@@ -22,5 +23,16 @@ public class RentalService {
             }
         }
         return null;
+    }
+
+    public void simulateApplicationInput(RegisteredUsers user) {
+        System.out.println("Rental service initiated for: " + user.getFullName());
+        user.displayUserType();
+    }
+
+    public void removeTrip(RegisteredUsers user) {
+        double fare = user.calculateFare(BASE_FARE);
+        System.out.println("Trip ended for: " + user.getFullName());
+        System.out.println("Calculated fare: " + fare);
     }
 }
